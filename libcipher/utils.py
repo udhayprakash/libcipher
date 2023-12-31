@@ -21,8 +21,7 @@ class EnglishChecker():
     def get_english_count(self, message):
         message = message.upper()
         message = self.remove_non_letters(message)
-        possible_words = message.split()
-        if possible_words == []:
+        if (possible_words := message.split()) == []:
             return 0.0  # no words at all, so return 0.0
         matches = 0
         for word in possible_words:
