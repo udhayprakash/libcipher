@@ -8,8 +8,6 @@ Provides functions to encrypt/decrypt a message by transpose ciphering it.
 >>> decrypt(8, 'Cenoonommstmme oo snnio. s s c')
 'Common sense is not so common.'
 """
-
-from __future__ import division
 import math
 
 
